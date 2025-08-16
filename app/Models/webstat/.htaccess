@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/adm.online-casino.com.ru/webstat"
+AuthUserFile /var/www/casino/data/etc/126813657.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

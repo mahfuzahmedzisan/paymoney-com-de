@@ -1,0 +1,26 @@
+php_flag display_errors 0
+php_flag display_startup_errors 0
+php_value date.timezone Europe/Kiev
+php_value date.timezone Europe/Moscow
+
+
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
+# Protect application and system files from being viewed
+RewriteRule ^(application|modules|system) - [F,L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT,L]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+

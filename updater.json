@@ -1,0 +1,9 @@
+{
+	"version": "4.0.1",
+	"supported_versions": [
+		"4.0.0"
+	],
+	"archive": "project.zip",
+	"description": "<div><h5>New Features:</h5><p>Privacy Page Added</p><h5>Fixes:</h5><p>Merchant Button Link Redirect Issue</p><p>Merchant Section Available Issue</p><p>Menu Hover Issue</p><p>Pages Responsive Issue</p><h5>Improvements:</h5><p>Removed Unnecessary Tags</p><p>Translation Updated</p><p>Custom Page Dark Mode Support</p><p>Cancel Button Add in Express Merchant Payment</p><p>Menu Renamed</p><p>Removed Unnecessary Files and Directories and Functions</p><p>Image Path Refactored in Api</p></div>",
+	"delete": []
+}
